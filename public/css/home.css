@@ -1,0 +1,69 @@
+/* GLOBAL STYLES */
+body {
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+/* MARKETING CONTENT */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Featurettes */
+.featurette-divider {
+  margin: 2rem 0;
+}
+
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS */
+@media (max-width: 767px) {
+  .carousel-caption {
+    position: absolute !important;
+    display: block !important;
+    width: 60%;
+    text-align: left;
+    margin-top: 100px;
+    font-size: small;
+  }
+
+  .carousel-inner {
+    max-height: 100%;
+  }
+
+  .carousel-item {
+    height: 350px;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    height: 350px;
+  }
+
+  .featurette-heading {
+    font-size: 30px;
+    margin-top: 1rem;
+    color: black;
+  }
+
+  .marketing {
+    text-align: left;
+  }
+}

@@ -1,0 +1,52 @@
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar .nav-link {
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+.sidebar .nav-link,
+.navbar .nav-link {
+  color: black;
+}
+
+/* Example with !important */
+.sidebar .nav-link.active,
+.navbar .nav-link.active {
+  color: blue !important;
+}
+
+/* responsive */
+@media (min-width: 768px) {
+  .sidebar .offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+  }
+}
+
+.sidebar {
+  height: auto;
+  /* or any other desired height */
+}
+
+.sidebar .offcanvas-lg {
+  position: static;
+  /* or any other desired position */
+}
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+  color: white !important;
+}

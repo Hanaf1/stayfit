@@ -1,0 +1,63 @@
+	 body {
+	   width: 100%;
+	   height: 100%;
+	   margin: 0;
+	   padding: 0;
+	   display: flex;
+	   align-items: center;
+	   justify-content: center;
+	   background: radial-gradient(circle, rgba(255, 226, 128, 1) 0%, rgba(255, 223, 115, 1) 100%);
+	 }
+
+	 .glass-ctr {
+	   width: 600px;
+	   height: auto;
+	   display: flex;
+	   flex-direction: column;
+	   align-items: center;
+	   justify-content: center;
+	 }
+
+	 .glass {
+	   width: 300px;
+	   height: 420px;
+	   background-color: rgb(255, 255, 255);
+	   position: absolute;
+	   -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+	   clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+	 }
+
+	 .water-ctr {
+	   top: -10;
+	   width: 250px;
+	   height: 400px;
+	   overflow: hidden;
+	   background-color: rgba(255, 226, 128, 0.5);
+	   -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+	   clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+	   position: relative;
+	 }
+
+	 .water {
+	   width: 4000px;
+	   height: 800px;
+	   background-image: url(img/image.png);
+	   background-repeat: no-repeat;
+	   background-size: contain;
+	   position: relative;
+	   animation: mymove 10s;
+	   animation-fill-mode: forwards;
+	   z-index: 1;
+	 }
+
+	 @keyframes mymove {
+	   0% {
+	     right: 0;
+	     top: 400px;
+	   }
+
+	   100% {
+	     right: 3400px;
+	     top: -30px;
+	   }
+	 }
